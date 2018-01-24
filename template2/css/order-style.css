@@ -1,0 +1,564 @@
+	h2, h3, h4 { color:#000000!important; } 	 	
+	 	 	
+	/*#orderForm #tld_price { 	 	
+		display: block; 	 	
+		text-align: right;	 	 	
+	}*/ 	 	
+	 
+	#orderForm .w100{ 	 	
+	    font-size: 0.875em; 	 	
+	    height: 2.1125em; 	 	
+	    margin: 0 0 1em; 	 	
+	    padding: 0.3em; 	 	
+	    width: 99%; 	 	
+	} 	 	
+	 	 	
+	#orderForm select.wide, select.wide { 	 	
+	    width: 224px !important; 	 	
+	    height: 1.9125em !important; 	 	
+	    margin: 1em 0 !important; 	 	
+	    padding: 0.3em !important; 	 	
+			font-size: .875em;
+	} 	 	
+	 	 	
+	#orderForm select.small, select.small { 	 	
+	    width: 94px !important; 	 	
+	    height: 1.9125em !important; 	 	
+	    margin: 0 0 1em !important; 	 	
+	    padding: 0.3em !important; 	 	
+	} 	 	
+	 	 	
+	#orderForm input.wide, input.wide { 	 	
+	    display: inline !important; 	 	
+	    height: 1.9125em !important; 	 	
+	    margin: 1em 0 !important; 	 	
+	    padding: 0.3em !important; 	 	
+	    width: 220px !important; 	 	
+	} 	 	
+	 	 	
+	#Register_Domains #first_tld { 	 	
+			background-position: 95%; 	 	
+	} 	 	
+	 
+	#domain_search input[type="file"], #domain_search input[type="checkbox"], #domain_search input[type="radio"], #domain_search select { 	 	
+			margin: 0;	 	 	
+	} 	 	
+  .attributes_form select{
+			padding: 0 15px 0 5px;
+	}
+	#tlds-results-table select { 	 	
+			height: auto; 	 	
+			padding: 0;  	 	
+	}
+	#orderForm .kvm-additional-oses {
+		margin-right: 28px;
+	}	
+	
+	#orderForm .kvm-additional-oses sup {
+		font-size: 14px;
+	}
+	<?/*------------------------------------------------------------------------------------------------------------------ 	 	
+							Order Form CSS 	 	
+	 ------------------------------------------------------------------------------------------------------------------*/?> 	 	
+	.hidden { 	 	
+		display:none; 	 	
+	} 	 	
+	 	 	
+	#orderForm{ 	 	
+		font: 400 16px/24px "PT Sans",Arial,Helvetica,sans-serif;	 	 	
+	} 	 	
+	 	 	
+	#orderForm .input{ 	 	
+		font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif !important; 	 	
+	} 	 	
+	#main-content div.right { 	 	
+		    width: auto!important; 	 	
+	} 	
+	 	 	
+	 	 	
+	/* 	 	
+	smaller than 980 	 	
+	*/ 	 	
+	@media screen and (max-width: 939px) { 	 	
+		#products-block .ui-widget-header:after { 	 	
+		    clear: both; 	 	
+		    content: "."; 	 	
+		    display: block; 	 	
+		    height: 0; 	 	
+		    line-height: 0; 	 	
+		    visibility: hidden; 	 	
+		} 	 	
+		#terms_dialog .ui-widget-header:after { 	 	
+	    		clear: both; 	 	
+	  		content: "."; 	 	
+	   		display: block; 	 	
+	    		height: 0; 	 	
+	    		line-height: 0; 	 	
+	    		visibility: hidden; 	 	
+		}  	 	
+		#terms_dialog .tabs-new span { 	 	
+			display: block; 	 	
+			float: left; 	 	
+			width: 50%; 	 	
+			border-radius: 5px 5px 5px 5px; 	 	
+			border: none; 	 	
+			margin: 0; 	 	
+			text-align: center; 	 	
+			height: 40px; 	 	
+			padding: 0 5px; 	 	
+		} 	 	
+		#terms_dialog .tabs-new span a { 	 	
+			display: block; 	 	
+			line-height: 40px; 	 	
+		} 	 	
+		#products-block .tabs-new span { 	 	
+		    border: medium none; 	 	
+		    border-radius: 5px 5px 5px 5px; 	 	
+		    display: block; 	 	
+		    float: left; 	 	
+		    height: 40px; 	 	
+		    text-align: center; 	 	
+		    width: 33.5%; 	 	
+				line-height: 40px;
+				vertical-align: middle;
+			  padding: 0!important;	
+		} 	 	
+		#products-block .tabs-new span.selected { 	 	
+			padding-top: 8px; 	 	
+		} 	 	
+		#products-block a, a:visited { 	 	
+			font: 400 17px/24px "PT Sans",Arial,Helvetica,sans-serif; 	 	
+		} 	 	
+		#products-block .split.input-details.sub-div-right { 	 	
+			width: 48%; 	 	
+		} 	 	
+		#products-block .sub-div-right div { 	 	
+			text-align: left; 	 	
+		} 	 	
+		#amount, #amount_vat, #amount_total { 	 	
+			width: auto; 	 	
+		} 	 	
+		.show1 { 	 	
+			display: inline; 	 	
+		}	 	 	
+		.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable { 	 	
+			width: 650px !important; 	 	
+		} 	 	
+	 	 	
+		#VPS > .split.input-details.sub-div-right > div > label >span, #SOLUSVM > .split.input-details.sub-div-right > div > label >span, #Dedicated > .split.input-details.sub-div-right > div > label >span { 	 	
+	                display: block; 	 	
+	        }	 	 	
+		#VPS > .split.input-details.sub-div-right > div > label >select, #SOLUSVM > .split.input-details.sub-div-right > div > label >select, #Dedicated > .split.input-details.sub-div-right > div > label >select { 	 	
+			width:60%!important; 	 	
+		} 	 	
+		#VPS > .split.input-details.sub-div-right > div > label >input, #SOLUSVM > .split.input-details.sub-div-right > div > label >input, #Dedicated > .split.input-details.sub-div-right > div > label >input { 	 	
+			width:60%!important; 	 	
+		} 	 
+		#orderForm .kvm-additional-oses {
+			margin-right: 0px;
+			margin-left: 25px;
+			float: left;
+		}				
+	} 	 	
+	 	 	
+	/* 	 	
+	smaller than 760 	 	
+	*/ 	 	
+	@media screen and (max-width: 760px) { 	 	
+		#products-block a, a:visited { 	 	
+			font: 400 15px/24px "PT Sans",Arial,Helvetica,sans-serif; 	 	
+		} 	 	
+		#details-block .sub-div-right div { 	 	
+			text-align: left; 	 	
+		} 	 	
+		#details-block input.wide, #details-block select.wide { 	 	
+			width: 90%; 	 	
+			margin: 1em 0; 	 	
+		} 	 	
+		#topline .right{ 	 	
+		width: 100% !important; 	 	
+		} 	 	
+		.position-fix { 	 	
+		    width: 50%; 	 	
+		} 	 	
+		.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable { 	 	
+			width: 600px !important; 	 	
+		} 	 	
+		#domain_dialog { 	 	
+		    height: 570px !important; 	 	
+		    width: 600px !important; 	 	
+		} 	 	
+		.show2 { 	 	
+			display: inline; 	 	
+		} 	 	
+		#orderForm input.wide,  #orderForm select.wide { 	 	
+			width: 92%!important; 	 	
+		}	 	 	
+		#VPS > .split.input-details.sub-div-right > div > label >select, #SOLUSVM > .split.input-details.sub-div-right > div > label >select, #Dedicated > .split.input-details.sub-div-right > div > label >select { 	 	
+			width:80%!important; 	 	
+		} 	 	
+		#VPS > .split.input-details.sub-div-right > div > label >input, #SOLUSVM > .split.input-details.sub-div-right > div > label >input, #Dedicated > .split.input-details.sub-div-right > div > label >input { 	 	
+			width:80%!important; 	 	
+		}
+		#SSL .ssl_choice .ssl_details .row div{
+			width:92% !important;
+			text-align:left !important;
+		}
+		#SSL .pl20{
+			padding:0;
+		}
+		#SSL .pl20 .ssl_period_select{
+			width:88%;
+		}
+	} 	 	
+	 	 	
+	/* 	 	
+	smaller than 650 	 	
+	*/ 	 	
+	@media screen and (max-width: 650px) { 	 	
+		#products-block .tabs-new span { 	 	
+		    width: 50%; 	 	
+		} 	 	
+		#products-block a, a:visited { 	 	
+			font: 400 16px/24px "PT Sans",Arial,Helvetica,sans-serif; 	 	
+		} 	 	
+		#payment-block .ui-widget-header:after { 	 	
+		    clear: both; 	 	
+		    content: "."; 	 	
+		    display: block; 	 	
+		    height: 0; 	 	
+		    line-height: 0; 	 	
+		    visibility: hidden; 	 	
+		}	 	 	
+		#payment-block .tabs-new span { 	 	
+		    border: medium none; 	 	
+		    border-radius: 5px 5px 5px 5px; 	 	
+		    display: block; 	 	
+		    float: left; 	 	
+		    height: 40px; 	 	
+		    text-align: center; 	 	
+		    width: 50%; 	 	
+		} 	 	
+		#payment-block .tabs-new span.selected { 	 	
+			padding-top: 8px; 	 	
+		} 	 	
+		#payment-block label { 	 	
+			width: 48%; 	 	
+			margin: 0 0 20px 0; 	 	
+			text-align: center; 	 	
+		} 	 	
+		#payment-block label img { 	 	
+			margin: 0 auto; 	 	
+		} 	 	
+		#details-block input.wide, #details-block select.wide { 	 	
+			width: 85%; 	 	
+		} 	 	
+		.split.pl20 label { 	 	
+			font-size: 0.775em; 	 	
+		} 	 	
+		.price-position { 	 	
+		    float: right; 	 	
+		    width: 40%; 	 	
+		} 	 	
+		.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable { 	 	
+			width: 400px !important; 	 	
+		} 	 	
+		#domain_dialog { 	 	
+		    height: 700px !important; 	 	
+		    width: 400px !important; 	 	
+		} 	 	
+		#extension_type li:first-child { 	 	
+	    	margin: 0; 	 	
+		} 	 	
+		#extension_type li { 	 	
+		    margin: 0 0 0 30px; 	 	
+		} 	 	
+		.hidden3 { 	 	
+			display: none; 	 	
+		} 	 	
+		#terms_dialog .tabs-new span { 	 	
+			width: 100%; 	 	
+		}  	 	
+	 	#main-content div.right{
+			width: 50%!important;
+		}
+		#domain_search .tabs-new span:not(.found_suggestions) {
+			width: 100%;
+			margin: 0 auto;
+			display: inline-block;
+			text-align: center;
+			padding: 5px 0;
+		}
+
+		#orderForm .kvm-additional-oses {
+			font-size: 12px;
+			margin-left: 0px;
+		}
+	} 	 	
+	 	 	
+	/* 	 	
+	smaller than 480 	 	
+	*/ 	 	
+	@media screen and (max-width: 480px) { 	 	
+		#orderForm select.small, select.small {  	 	
+		    width: 92%!important; 	 	
+		} 	 	
+		#products-block .tabs-new span { 	 	
+		    width: 100%; 	 	
+		} 	 	
+		#products-block a, a:visited { 	 	
+			font: bold 18px/24px "PT Sans",Arial,Helvetica,sans-serif; 	 	
+		} 	 	
+		#username-block input.wide { 	 	
+		    width: 60%; 	 	
+		} 	 	
+		#domains-block .tabs-new span { 	 	
+			border: medium none; 	 	
+			padding: 6px 10px; 	 	
+		    border-radius: 5px 5px 5px 5px; 	 	
+		} 	 	
+		#domains-block a, a:visited { 	 	
+			font: bold 15px/24px "PT Sans",Arial,Helvetica,sans-serif; 	 	
+		} 	 	
+		#payment-block .tabs-new span { 	 	
+			padding: 6px 10px; 	 	
+		} 	 	
+		#payment-block a, a:visited { 	 	
+			font: 14px/24px "PT Sans",Arial,Helvetica,sans-serif; 	 	
+		} 	 	
+		#payment-block label { 	 	
+			text-align: left; 	 	
+			width: 50%; 	 	
+			font-size: 13px; 	 	
+		} 	 	
+		#payment-block label img { 	 	
+			margin: 0; 	 	
+		} 	 	
+		#details-block .split { 	 	
+			width: 100%; 	 	
+		} 	 	
+		#details-block input.wide, #details-block select.wide { 	 	
+			margin-left: 5%; 	 	
+		} 	 	
+		#details-block .input-details { 	 	
+			width: 90% !important; 	 	
+		} 	 	
+		#products-block .split { 	 	
+			width: 100%; 	 	
+		} 	 	
+		.split.pl20 label { 	 	
+			font-size: 0.8em; 	 	
+		} 	 	
+		#products-block input.wide { 	 	
+			width: 90%; 	 	
+		} 	 	
+		#products-block select.small { 	 	
+			width: 100%; 	 	
+		} 	 	
+		.split { 	 	
+			width: 100%; 	 	
+		} 	 	
+		#main-content div.right { 	 	
+		    width: 100% !important; 	 	
+				float: left!important;
+		} 	 	
+		.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable { 	 	
+			width: 260px !important; 	 	
+		} 	 	
+		#domain_dialog { 	 	
+		    height: 750px !important; 	 	
+		    width: 270px !important; 	 	
+		} 	 	
+		#tld-checkboxes li { 	 	
+			width: 70px; 	 	
+		} 	 	
+		.ui-dialog-buttonset button, .button { 	 	
+			font-size: 0.75em; 	 	
+		} 	 	
+		#extension_type li { 	 	
+		    margin: 0 0 0 20px; 	 	
+		}  	 	
+		#whois_form table tr th, table tr td { 	 	
+			font-size: 0.7em; 	 	
+		} 	 	
+		#whois_form input.wide { 	 	
+			width: 110px; 	 	
+		} 	 	
+		#whois_form select.wide { 	 	
+			width: 130px; 	 	
+		} 	 	
+		.hidden4 { 	 	
+			display: none; 	 	
+		} 	 	
+		.show4 { 	 	
+			display: table-cell; 	 	
+		} 	 	
+		#products-block .split.input-details.sub-div-right { 	 	
+			width: 90%!important; 	 	
+		}	 	 	
+		#Register_Domains #first_tld { 	 	
+			background-position: 97%; 	 	
+		} 	 	
+		#domains-block .tabs-new span, #payment-block .tabs-new span {
+			margin: 0 auto;
+		    display: inline-block;
+			width: 100%;
+			text-align: center;
+		}
+		#tlds-results-table tr {
+			background:#fff !important;	
+			border-bottom:1px solid #ccc !important;	
+		}
+		#tlds-results-table td {
+			display: inline-block;
+			min-width: auto !important;
+			border-bottom:none !important;
+		}
+		#tlds-results-table td:nth-child(1), #tlds-results-table td:nth-child(4){
+			text-align:center;
+			min-width: 100% !important;
+		}
+		#tlds-results-table td:nth-child(2), #tlds-results-table td:nth-child(2) p{
+			font-size:12px;
+		}
+		#tlds-results-table td:nth-child(2) strong{
+			word-wrap:break-word;	
+		}
+		#tlds-results-table td:nth-child(2) select, #tlds-results-table td:nth-child(2) select{
+			width:100% !important;
+		}
+		#tlds-results-table td:nth-child(2) label{
+			margin:0;
+			font-size:12px;
+		}
+		#tlds-results-table td:nth-child(2){
+			min-width: 60% !important;
+			width:60% !important;
+		}
+		#tlds-results-table td:nth-child(3){
+			min-width: 35% !important;
+			width: 35% !important;
+		}
+	} 		
+	 	 	
+	 	 	
+	 	 	
+	#orderForm label{ 	 	
+	    display: inline; 	 	
+	} 	 	
+	 	 	
+	#orderForm .sub-div-right label { 	 	
+	    margin-right: 5%; 	 	
+	} 	 	
+	 	 	
+	#domain_search tr td, #domain_search table tfoot tr td, #whois_form table tr td, #whois_form table tfoot tr td { 	 	
+	    height: auto !important; 	 	
+	    min-width: 0 !important; 	 	
+	    text-align: left; 	 	
+	    background-color: #FFFFFF; 	 	
+	    border-bottom-color: #DDDDDD; 	 	
+	} 	 	
+	 	 	
+	#whois_form table tr td, #whois_form table tfoot tr td{ 	 	
+	    color: #000000; 	 	
+	} 	 	
+	 	 	
+	#whois_form .red{ 	 	
+	    color: #DB4865!important; 	 	
+	}  	 	
+	 	 	
+	#whois_form table{ 	 	
+		font-size: 1em; 	 	
+	} 	 	
+	 	 	
+	#domain_search label{ 	 	
+		display: inline-block; 	 	
+	} 	 	
+	 	 	
+	 	 	
+	#domain_search_content, #domain_search_content .domain_period, #domain_search .ssl_period_select{ 	 	
+		font-size: 0.8em; 	 	
+	} 	 	
+  select.domain_period, #domain_search .ssl_period_select{
+		border-radius: 4px;
+	}
+	.additional_services label input{
+		margin-right:5px !important;
+	}
+	#selected_domains_table{
+		width:100%;
+		margin-bottom:10px;
+	}
+	#selected_domains_table td{
+		display:inline-block;
+		background:none !important;
+		height: auto !important;
+		margin:0 !important;
+		border-bottom:none;
+		padding:0 !important;
+	}
+	#selected_domains_table .domain_tr{
+		border-bottom:1px solid #ccc;
+	}
+	#selected_domains_table td:nth-child(1){
+		min-width: 39%;
+	}
+	#selected_domains_table td:nth-child(1) strong{
+		word-wrap:break-word;
+	}
+	#selected_domains_table td:nth-child(1) .additional_service{
+		margin:0;
+		font-size:12px;
+	}
+	#selected_domains_table td:nth-child(2), #selected_domains_table td:nth-child(3){
+		min-width:20%;
+		vertical-align:bottom;
+		padding:0 !important;
+	}
+	#selected_domains_table td:nth-child(4){
+		min-width: 5%;
+	}
+	#selected_domains_table td:nth-child(5){
+		min-width: 15%;
+		width:15% !important;
+	}
+	
+	#tlds-results-table .tooltip { 	 	
+	    background: none repeat scroll 0 0 rgba(0, 0, 0, 0); 	 	
+	    border-style: none; 	 	
+	    color: #000000; 	 	
+	    display: inline; 	 	
+	    font-size: 0.9375em; 	 	
+	    font-weight: normal; 	 	
+	    left: auto; 	 	
+	    line-height: 0; 	 	
+	    max-width: none; 	 	
+	    padding: 0.2em; 	 	
+	    position: static; 	 	
+	    width: auto; 	 	
+	    z-index: 0; 	 	
+	} 	 	
+	#vtip {
+	color: #000000;
+	}	
+	input.regtrans_epp { 	 	
+	    display: inline; 	 	
+	    width: 180px; 	 	
+	} 	 	
+	 	 	
+	.ui-dialog .ui-dialog-titlebar-close span { 	 	
+	    top: 0; 	 	
+	    left: 0; 	 	
+	    margin: 0; 	 	
+	} 	 	
+	 	 	
+	#terms_dialog .ui-widget-header a { 	 	
+	    font: 400 14px/24px "PT Sans",Arial,Helvetica,sans-serif; 	 	
+	} 	 	
+	#domain_search_content tr td { 	 	
+	    color: #4d4d4d; 	 	
+	}
+	#extra_holder table tr td:first-child {
+		max-width:400px;
+		word-wrap:break-word;
+	}

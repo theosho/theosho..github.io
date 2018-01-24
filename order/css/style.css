@@ -1,0 +1,602 @@
+@charset "utf-8";
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+table { font-size: 1em; }
+
+.holder {
+	padding: 10px;
+	overflow: auto;
+}
+
+.loading { background: #F2F2F2 url("images/loading.gif") 10px 5px no-repeat; }
+
+#order_form_content { 
+	min-width: 780px;
+	max-width: 1260px;
+	margin: 0 auto;
+}
+
+#domain_dialog { 
+	height: 530px !important;
+	width: 640px !important; 
+}
+
+#domain_search_content {
+	height: 310px;
+	overflow: auto;
+	background: #F2F2F2;
+}
+
+#domain_owner_details {
+	overflow: auto;
+}
+
+.domains-result-table {
+    width: 96%;
+    margin: 1px auto;
+}
+.domains-result-table td {
+    vertical-align: top;
+    padding: 5px 3px;
+}
+.domains-result-table tr.even td {
+    background-color: white;
+}
+.domains-result-table tr.selected td { /*  background: #FE944A; */ }
+.domains-result-table td p {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.domains-result-table tr.selected p.idp, .domains-result-table tr.selected p.epp, .domains-result-table tr.selected p.ssl { display: block; }
+.domains-result-table tr.selected p.langtag { display: block; }
+.domains-result-table td.transfer-sum p { padding-top: 25px; }
+.domains-result-table td.sum p { visibility: hidden; }
+.domains-result-table td.radioTd { width: 18px; }
+.domains-result-table td.period, 
+.domains-result-table td.period select {
+	width: 80px; 
+}
+.domains-result-table td.sum { 
+	width: 80px; text-align: right; padding-top: 7px; padding-right: 5px; 
+}
+.domains-result-table p.epp,
+.domains-result-table p.idp,
+.domains-result-table p.ssl,
+.domains-result-table p.langtag,
+.domains-result-table p.tld-price-id-protect { display: none; padding: 0; }
+
+p.ssl .ssl_choise { display:none; margin-left: 10px; }
+p.ssl .ssl_choise span.price { float: none }
+
+#extensions { margin-top: 10px; }
+#extensions input { vertical-align: middle; }
+#extensions ul {
+	margin: 0;
+	padding: 0 0 10px;
+	list-style-type: none;
+}
+
+#extension_type li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+#tld-checkboxes {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+#tld-checkboxes li {
+    float: left;
+    width: 76px;
+}
+
+.input {
+	height: 20px;
+	border-width: 1px;
+	border-color: grey;
+}
+
+.wide { width: 220px; }
+select.wide { width: 224px; }
+
+.small { width: 90px; }
+select.small { width: 94px; }
+
+.w100 { width: 99%; }
+
+.normal { font-weight: normal !important; }
+
+.mb5 { margin-bottom: 5px; }
+
+.pl20 { padding-left: 20px; }
+
+.p5 { padding: 5px; }
+
+#username-block { padding: 15px; }
+
+#username-block, #products-block, #domains-block, #details-block, #payment-block, #amounts, .mb20 { margin-bottom: 20px; }
+
+.trustwave {
+	float: right;
+}
+
+.input-details div {
+	margin-bottom: 3px;
+	text-align: left;
+}
+
+.right { float: right; }
+
+#business_options {
+	margin: 5px 0 0 0;
+}
+
+#amount, #amount_vat, #amount_total, #amount_discount, #original_amount {
+	display: inline-block;
+	width: 160px;
+	font-weight: bold;
+}
+
+#amounts {
+	text-align: right;
+	padding-right: 40px;
+}
+
+.upgrade_price {
+	display: inline-block;
+	width: 80px;
+}
+
+.prices div {
+	padding-bottom: 1px;
+}
+
+#submit_order {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.header,
+.tabs-new { 
+	padding: 6px; 
+	font-size: 13px;
+}
+
+.tabs-new span {
+	margin-right: -4px;
+	border-style: solid;
+	border-width: 0 1px 0 0;
+	border-style: solid;
+}
+
+.tabs-new span a {
+	padding: 6px 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.tabs-new span.selected {
+	margin-left: -1px;
+	padding-top: 12px;
+	padding-bottom: 8px;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+}
+
+.tabs-new span.selected a {
+	color: #2C4359; /* or ui-state-default a -> color */
+}
+
+.tabs-new span:last-child:not(.clickedTab) {
+	border-width: 0px;
+}
+
+div.tabs-new + div.ui-widget-content, div.header + div.ui-widget-content { padding: 10px; }
+
+.split {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+
+.all-features {
+	text-align: right;
+	margin-bottom: 5px;
+}
+
+tr.admintr, tr.techtr, tr.billingtr { display: none; }
+td.extra-attributes { padding: 0 20px 0 20px; }
+
+#selected_domains_table {
+	width: 80%;
+	margin: 10px 0 0 0;
+}
+
+#selected_domains_table td {
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	margin: 1px;
+	padding: 3px;
+}
+
+.plan-features {
+	float: left;
+	width: 260px;
+}
+
+.info {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	background-image: url('images/info.gif');
+}
+
+.w16 {
+	display: inline-block;
+	width: 16px;
+}
+
+.pr20 { padding-right: 20px; }
+.red { color: #DB4865; }
+.inv { visibility: hidden; }
+
+/* Vertigo Tip by www.vertigo-project.com */
+p#vtip {
+	display: none;
+	position: absolute;
+	width: 320px;
+	padding: 10px; left: 5px;
+	font-size: 0.8em;
+	background-color: white;
+	border: 1px solid #a6c9e2;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	z-index: 9999;
+}
+p#vtip #vtipArrow {
+	position: absolute;
+	top: -10px;
+	left: 5px;
+}
+#tld_price { font-weight: bold; }
+
+#choose_pm {
+	font-weight: normal;
+}
+#choose_pm label {
+	margin-right: 20px;
+}
+
+#all_pm {
+	height: 90px;
+	display: table;
+	width: 100%;
+}
+#all_pm > div {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 20px;
+}
+
+#PayPalDP, #FirstData, #WorldPay { overflow: hidden; }
+#PayPalDP label, #FirstData label, #WorldPay label {
+	display: block;
+	float: left;
+	margin-right: 40px;
+}
+
+.sub-div-right div { 
+	text-align: right; 
+}
+.sub-div-right label {
+	margin-right: 15%;
+}
+
+.border-box {
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+#email_notification_settings {
+	text-align:center;
+	margin-bottom:20px;
+}
+#email_notification_settings label {
+	margin-left:20px;
+}
+#promo_code {
+	text-align: right;
+	padding-right: 40px;
+	margin-bottom: 10px;
+}
+#promo_code input {
+	width: 150px;
+	margin: 0 0 0 10px;
+}
+
+#domain_search .tabs-new span a span {
+	border: 0px;
+}
+
+span.found_suggestions {
+	padding:0px;
+	margin-left: 5px;
+	background:#ff0000;
+	color: #fff;	
+}
+
+#SSL .ssl_prices {
+	margin-left: 15px;
+}
+
+#SSL .ssl_choice .ssl_details { margin: 0px 0 0 20px; }
+#SSL .ssl_choice .ssl_details .row { margin-bottom: 10px; }
+#SSL .ssl_choice .ssl_details .row div { display: inline-block; }
+#SSL .ssl_choice .ssl_details .row div:first-of-type {
+	width: 35%; 
+	text-align: right;
+}
+
+#selected_domains .additional_service { margin-left:10px; }
+
+#Host_Domain .add_ssl_to_hosted_domain { 
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.add_ssl_to_hosted_domain span {
+	cursor: pointer;
+}
+
+.add_ssl_to_hosted_domain .ui-icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.input-details .add_ssl_to_hosted_domain .ui-icon {
+	margin:0 42px;
+}
+
+.add_ssl_to_hosted_domain .ssl_price {
+	display: inline-block;
+	width: 80px;
+}
+
+#order_ssl_dialog .row {
+	margin-bottom: 5px;	
+}
+
+#order_ssl_dialog label {
+	font-weight: bold;
+	display: block;
+}
+
+#order_ssl_dialog input[type="text"], #order_ssl_dialog input[type="email"] {
+	width: 100%;
+}
+
+#order_ssl_dialog input[type="email"] {
+	width: 90%;
+	margin-left: 0px;
+}
+
+#order_ssl_dialog .approver_email .custom_approver_email .close, #order_ssl_dialog .approver_email .ssl_approver_email {
+	margin-left: 0px;
+}
+
+#order_ssl_dialog .submit {
+	text-align: center;
+	margin-top: 10px;	
+}
+
+.split .prices { margin-left: 10px; }
+
+.domain_names_only {
+	position: relative;
+}
+
+.domain_names_only div.prices {
+	display: inline-block;
+}
+
+.domain_names_only div.icann_logo {
+	max-width: 100px;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+}
+
+.domain_names_only div.icann_logo img {
+	width:100%;
+}
+
+#domain_search .approver_email {
+	margin-left:3px;
+}
+
+.approver_email .ssl_approver_email {
+	margin-left:10px;
+	display: block;
+}
+
+.approver_email input.ssl_approver_email {
+	display: inline-block;
+	min-width: 60%;
+}
+
+.approver_email .custom_approver_email {
+	display:none;
+	margin-top: 5px;
+}
+
+.approver_email .custom_approver_email .close {
+    background-image: url('../images/cancel_icon.png');
+    width: 21px;
+    height: 18px;
+    display: inline-block;
+	cursor: pointer;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+#SSL .ssl_details .approver_email label, #SSL .ssl_details .approver_email .custom_approver_email { display:none !important; }
+
+#SSL .ssl_details .ssl_approver_email { margin-left:0px; }
+
+.remove_selected_domain .ui-icon {
+	cursor:pointer;
+}
+
+.additional_ssl { 
+	margin-top: 10px;
+	padding: 10px; 
+	width: 98%; 
+}
+
+.additional_ssl div { 
+	display: inline-block; 
+	width: 15%; 
+	text-align: right;
+}
+
+.additional_ssl div:first-of-type { 
+	text-align: left;
+	width: 40%;
+}
+
+.additional_ssl div.remove {
+	float: right;
+}
+
+.additional_ssl div.remove .ui-icon {
+	cursor: pointer;
+}
+
+#domain_search .ssl_period_select {
+	margin-top: 14px;
+	display: none;
+}
+
+.approver_email .loading { 
+	background: transparent url("images/loading.gif") no-repeat; 
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.terms_services a {
+	text-decoration: underline !important;
+}
+
+.mail_limit_notice {
+	margin-top:10px;
+	display:none;
+}
+
+#main-content .mail_limit_notice ul {
+	list-style-type: none;
+}
+
+#main-content .mail_limit_notice ul li {
+	font-size: 14px;	
+	padding-left: 10px;
+}
+
+.assembly_time_note, .raid_no_redundancy_notification {
+	text-align: left !important;
+	margin-left: 4%;
+	margin-top: 7%;
+	font-size: 85%;
+}
+
+.raid_no_redundancy_notification  {
+	display: none;
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+	text-align: center !important;
+}
+
+.dedicated_storage_config {
+	text-align: left !important;
+	margin-left: 4%;
+}
+
+.dedicated_storage_config .header {
+	text-align: center;
+}
+
+.dedicated_storage_config .inside {
+	text-align: left !important;
+	display: none;
+}
+
+.dedicated_storage_config select {
+	width: 50%;
+}
+
+.dedicated_storage_config select[name="raid"] {
+	width: 30%;
+}
+
+.dedicated_storage_config label {
+	display: block;
+	text-align: right;
+}
+
+.dedicated_storage_config .slot-price {
+	display: inline-block;
+	font-weight: bold;
+	min-width: 92px;
+}
+
+.dedicated_storage_config .no-disk-upgrade-info { 
+	min-width: 63px;
+	padding-right: 143px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+@media screen and (max-width:886px) {
+	.dedicated_storage_config .no-disk-upgrade-info {
+		padding-right: 130px;
+	}
+}
+
+.dedicated_storage_config .inside label {
+	display: block !important;
+}
+
+#trial-info {
+	display: none;
+}
+
+#trial-info .ui-widget-content {
+	padding: 15px;
+}
+
+.kvm-additional-oses {
+	width: 251px;
+	float: right;
+	margin-right: 74px;
+	font-size: 12px;
+}
+
+#orderForm .sub-div-right label {
+	margin-right: 5%;
+}
